@@ -1,0 +1,106 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+wandb/
+runs/
+
+# Data directories
+datasets/
+data/
+!datasets/.gitkeep
+
+# Generated samples and outputs
+samples/
+outputs/
+results/
+generated/
+
+# Model checkpoints (except the provided one)
+model_pth/*.pth
+!model_pth/DCTdiff_cifar10_mid.pth
+
+# Statistics files
+assets/stats/
+*.npz
+!assets/fid_stats/*.npz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache
+.cache/
+*.cache
+
+# Environment variables
+.env
+.env.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Distribution / packaging
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/

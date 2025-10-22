@@ -128,7 +128,7 @@ class CIFAR10(DatasetFactory):
     @property
     def fid_stat(self):
         # specify the fid_stats file that will be used for FID computation during the training
-        return '/data/scratch/U-ViT2/assets/fid_stats/fid_stats_cifar10_train.npz'
+        return '/home/kaiwei/diffusion/DCTdiff/assets/fid_stats/fid_stats_cifar10_train.npz'
 
     @property
     def has_label(self):

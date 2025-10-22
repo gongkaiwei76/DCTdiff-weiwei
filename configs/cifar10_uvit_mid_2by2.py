@@ -48,7 +48,7 @@ def get_config():
 
     config.dataset = d(
         name='cifar10',
-        path='/data/scratch/datasets/cifar10',
+        path='/home/kaiwei/diffusion/DCTdiff/datasets/cifar10',
         resolution=32,
         tokens=64,  # number of tokens to the network
         low_freqs=4,  # B**2 - m
@@ -62,10 +62,10 @@ def get_config():
 
     config.sample = d(
         sample_steps=100,
-        n_samples=50000,
-        mini_batch_size=500,
+        n_samples=5,
+        mini_batch_size=5,
         algorithm='euler_maruyama_ode',
-        path='/data/scratch/samples',  # must be specified for distributed image saving
+        path='/home/kaiwei/diffusion/DCTdiff/samples',  # must be specified for distributed image saving
         save_npz=''  # save generated sample if not None (used for precision/recall computation)
     )
 
